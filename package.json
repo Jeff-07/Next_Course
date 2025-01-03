@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@types/qs": "^6.9.17",
+    "qs": "^6.13.1",
+    "react-html-parser": "^2.0.2",
+    "zod": "^3.24.1"
+  }
+}

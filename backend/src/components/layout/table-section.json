@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_layout_table_sections",
+  "info": {
+    "displayName": "Table-Section",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "text"
+    },
+    "isEditable": {
+      "type": "boolean",
+      "default": false
+    },
+    "tableValues": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.three-value-table"
+    },
+    "tableHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.three-value-table"
+    },
+    "background": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
