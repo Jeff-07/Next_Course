@@ -9,68 +9,10 @@ import { TableSection } from "@/components/custom/table-trial";
 
 import { getStrapiURL } from "@/lib/utils";
 
-/*const homePageQuery = qs.stringify({
-  populate: {
-    blocks: {
-      on: {
-        "layout.hero-section": {
-          populate: {
-            image: {
-              fields: ["url", "alternativeText"]
-            },
-            link: {
-              populate: true
-            }
-          }
-        },
-        "layout.features-section": {
-          populate: {
-            feature: {
-              populate: true
-            }
-          }
-        },
-        "layout.table-section": {
-          populate: {
-            tableHeading: {
-              populate: true
-            },
-            tableValues: {
-              populate: true
-            },
-            background: {
-              fields: ["url", "alternativeText"]
-            }
-          }
-        }
-      }
-    }
-  }
-});
-
-async function getStrapiData(path:string) {
-  const baseUrl = getStrapiURL();
-  const url = new URL(path, baseUrl);
-
-  url.search = homePageQuery;
-
-  console.log(url.href);
-
-  try {
-    const response = await fetch(url.href);
-    const data = await response.json();
-
-    return data;
-
-  } catch (error) {
-    console.error(error);
-  }
-}*/
-
 const blockComponents = {
   "layout.hero-section": HeroSection,
   "layout.features-section": FeatureSection,
-  //"layout.table-section": TableSection,
+  "layout.table-section": TableSection,
 };
 
 function blockRenderer(block:any) {
